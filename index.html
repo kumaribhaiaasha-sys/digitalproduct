@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सनातन ग्रंथालय | 150+ संपूर्ण हिन्दू धर्म ग्रंथ संग्रह</title>
+  
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4593196541006301');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4593196541006301&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Tiro+Devanagari+Hindi:ital@0;1&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-white: #ffffff;
+      --bg-soft: #faf7f2;
+      --bg-warm: #fff9f0;
+      --gold-primary: #d97706;
+      --gold-deep: #b45309;
+      --gold-light: #fef3c7;
+      --gold-accent: #f59e0b;
+      --saffron-bright: #ea580c;
+      --text-dark: #1e1b18;
+      --text-muted: #57534e;
+      --glass-white: rgba(255, 255, 255, 0.92);
+      --glass-border: rgba(217, 119, 6, 0.28);
+      --card-shadow: 0 18px 40px -12px rgba(180, 83, 9, 0.15), 0 0 1px 1px rgba(217, 119, 6, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-color: var(--bg-white);
+      color: var(--text-dark);
+      font-family: 'Tiro Devanagari Hindi', 'Outfit', serif;
+      line-height: 1.6;
+      position: relative;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* Ambient Background Lights */
+    #particle-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .ambient-glow-top {
+      position: fixed;
+      top: -160px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 950px;
+      height: 650px;
+      background: radial-gradient(circle, rgba(254, 243, 199, 0.85) 0%, rgba(255, 237, 213, 0.5) 45%, rgba(255, 255, 255, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page-wrap {
+      position: relative;
+      z-index: 2;
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 16px 18px 125px 18px;
+    }
+
+    /* Top Urgency Header */
+    .top-bar {
+      background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #fde68a 100%);
+      border: 1px solid rgba(245, 158, 11, 0.45);
+      border-radius: 999px;
+      padding: 9px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 18px rgba(245, 158, 11, 0.2);
+      animation: pulseAlert 2.8s infinite alternate ease-in-out;
+    }
+
+    @keyframes pulseAlert {
+      0% { transform: scale(0.99); }
+      100% { transform: scale(1.01); box-shadow: 0 6px 26px rgba(245, 158, 11, 0.35); }
+    }
+
+    .live-dot {
+      width: 10px;
+      height: 10px;
+      background: #dc2626;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #dc2626;
+      animation: pingDot 1.4s infinite cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    @keyframes pingDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(1.35); }
+    }
+
+    .top-bar-text {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #92400e;
+      letter-spacing: 0.3px;
+    }
+
+    /* 3D Rotating Sacred Mandala */
+    .sacred-graphic-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 8px auto 16px auto;
+      width: 130px;
+      height: 130px;
+    }
+
+    .spinning-mandala {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      animation: rotateClockwise 28s linear infinite;
+    }
+
+    .spinning-mandala-reverse {
+      position: absolute;
+      width: 76%;
+      height: 76%;
+      animation: rotateCounter 18s linear infinite;
+    }
+
+    .om-center {
+      position: absolute;
+      font-size: 2.7rem;
+      font-weight: 900;
+      background: linear-gradient(135deg, #d97706 0%, #ea580c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 4px 14px rgba(234, 88, 12, 0.4));
+      animation: floatOm 3.2s ease-in-out infinite alternate;
+    }
+
+    @keyframes rotateClockwise { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @keyframes rotateCounter { 0% { transform: rotate(360deg); } 100% { transform: rotate(0deg); } }
+    @keyframes floatOm { 0% { transform: scale(0.95); } 100% { transform: scale(1.08); } }
+
+    /* Hero Typography */
+    .hero-title {
+      font-size: clamp(1.95rem, 5.2vw, 3rem);
+      font-weight: 900;
+      text-align: center;
+      line-height: 1.25;
+      color: #1c1917;
+      margin-bottom: 12px;
+    }
+
+    .title-highlight {
+      background: linear-gradient(135deg, #b45309 0%, #ea580c 50%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .hero-subtitle {
+      text-align: center;
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 760px;
+      margin: 0 auto 28px auto;
+      line-height: 1.65;
+    }
+
+    /* Primary Hero Graphic Card (Uploaded Sanatan Granthalaya Banner) */
+    .banner-hero-card {
+      position: relative;
+      background: #ffffff;
+      border: 3px solid rgba(245, 158, 11, 0.45);
+      border-radius: 24px;
+      padding: 10px;
+      margin: 0 auto 30px auto;
+      box-shadow: 0 24px 50px -10px rgba(217, 119, 6, 0.28), 0 0 30px rgba(245, 158, 11, 0.18);
+      overflow: hidden;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .banner-hero-card:hover {
+      transform: translateY(-4px) scale(1.008);
+      box-shadow: 0 30px 60px -10px rgba(217, 119, 6, 0.35), 0 0 40px rgba(245, 158, 11, 0.3);
+    }
+
+    .banner-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      object-fit: cover;
+    }
+
+    .banner-badge-float {
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      background: rgba(234, 88, 12, 0.94);
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Motion Graphics Video Stage */
+    .video-motion-card {
+      background: #ffffff;
+      border: 2px solid rgba(245, 158, 11, 0.3);
+      border-radius: 22px;
+      padding: 8px;
+      margin: 0 auto 32px auto;
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #0f0a05;
+    }
+
+    .motion-video-player {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.92;
+      filter: saturate(1.2) contrast(1.05);
+    }
+
+    .video-overlay-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(20, 10, 0, 0.65) 80%, rgba(15, 7, 0, 0.9) 100%);
+      pointer-events: none;
+    }
+
+    .video-floating-content {
+      position: absolute;
+      bottom: 18px;
+      left: 20px;
+      right: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      z-index: 5;
+    }
+
+    .video-info-box h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fef08a;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+
+    .video-info-box p {
+      font-size: 0.92rem;
+      color: #f5f5f4;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    }
+
+    /* Countdown Urgency Box */
+    .timer-card {
+      background: linear-gradient(135deg, #ffffff 0%, #fefce8 100%);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-radius: 20px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 28px;
+      box-shadow: 0 8px 24px rgba(180, 83, 9, 0.08);
+    }
+
+    .timer-label {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #92400e;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .timer-digits {
+      display: flex;
+      gap: 10px;
+    }
+
+    .timer-box {
+      background: #1c1917;
+      color: #fbbf24;
+      padding: 6px 14px;
+      border-radius: 10px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 800;
+      min-width: 44px;
+      text-align: center;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.6);
+      border: 1px solid rgba(251, 191, 36, 0.3);
+    }
+
+    .timer-box small {
+      display: block;
+      font-size: 0.65rem;
+      color: #a8a29e;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    /* 3D High-Conversion CTA Button */
+    .cta-button-3d {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto 36px auto;
+      padding: 20px 32px;
+      background: linear-gradient(135deg, #f59e0b 0%, #ea580c 50%, #c2410c 100%);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 20px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid #fef08a;
+      box-shadow: 0 16px 36px -6px rgba(234, 88, 12, 0.55), 0 6px 0 #9a3412, inset 0 2px 4px rgba(255, 255, 255, 0.6);
+      transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      cursor: pointer;
+    }
+
+    .cta-button-3d:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 22px 45px -6px rgba(234, 88, 12, 0.7), 0 9px 0 #9a3412, inset 0 2px 6px rgba(255, 255, 255, 0.8);
+      filter: brightness(1.05);
+    }
+
+    .cta-button-3d:active {
+      transform: translateY(4px);
+      box-shadow: 0 6px 16px rgba(234, 88, 12, 0.4), 0 2px 0 #9a3412;
+    }
+
+    .cta-shimmer {
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 50%;
+      height: 200%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+      transform: rotate(25deg);
+      animation: buttonShine 3.2s infinite ease-in-out;
+    }
+
+    @keyframes buttonShine {
+      0% { left: -70%; }
+      40% { left: 140%; }
+      100% { left: 140%; }
+    }
+
+    .price-tag {
+      background: #ffffff;
+      color: #ea580c;
+      padding: 3px 12px;
+      border-radius: 999px;
+      font-size: 1.05rem;
+      font-weight: 900;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    /* Benefits Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-bottom: 40px;
+    }
+
+    .feature-card {
+      background: linear-gradient(145deg, #ffffff 0%, #fffbf5 100%);
+      border: 1px solid rgba(245, 158, 11, 0.28);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: var(--card-shadow);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(245, 158, 11, 0.6);
+      box-shadow: 0 20px 38px -10px rgba(180, 83, 9, 0.2);
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #f59e0b, #ea580c);
+    }
+
+    .feature-icon-bubble {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.45rem;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 10px rgba(245, 158, 11, 0.15);
+    }
+
+    .feature-card h4 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #1c1917;
+      margin-bottom: 6px;
+    }
+
+    .feature-card p {
+      font-size: 0.94rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Granth Highlights List */
+    .granth-list-card {
+      background: #ffffff;
+      border: 2px dashed rgba(245, 158, 11, 0.4);
+      border-radius: 22px;
+      padding: 28px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    }
+
+    .granth-list-card h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #92400e;
+      margin-bottom: 20px;
+    }
+
+    .granth-chips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .granth-chip {
+      background: #fdfaf3;
+      border: 1px solid rgba(217, 119, 6, 0.22);
+      border-radius: 999px;
+      padding: 7px 16px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #451a03;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .granth-chip:hover {
+      background: #fef3c7;
+      transform: scale(1.05);
+      border-color: #f59e0b;
+    }
+
+    /* Sticky Bottom Mobile Bar */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 12px 18px;
+      border-top: 1px solid rgba(245, 158, 11, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      z-index: 100;
+      box-shadow: 0 -8px 25px rgba(0,0,0,0.08);
+    }
+
+    .sticky-pricing {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sticky-strike {
+      font-size: 0.8rem;
+      color: #78716c;
+      text-decoration: line-through;
+    }
+
+    .sticky-now {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: #ea580c;
+    }
+
+    .sticky-btn {
+      flex: 1;
+      max-width: 320px;
+      background: linear-gradient(135deg, #f59e0b, #ea580c);
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-align: center;
+      border: 1px solid #fde68a;
+      box-shadow: 0 4px 14px rgba(234, 88, 12, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    @media (max-width: 640px) {
+      .video-container { height: 220px; }
+      .cta-button-3d { font-size: 1.15rem; padding: 16px 20px; }
+      .timer-card { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Light Effects -->
+  <div class="ambient-glow-top"></div>
+
+  <!-- 60FPS Golden Cosmic Particle Motion Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <div class="page-wrap">
+
+    <!-- Top Urgency Notice -->
+    <div class="top-bar">
+      <div class="live-dot"></div>
+      <div class="top-bar-text">सीमित समय महा-ऑफर: आज ही प्राप्त करें 90% विशेष छूट पर!</div>
+    </div>
+
+    <!-- 3D Rotating Sacred Mandala Animation -->
+    <div class="sacred-graphic-container">
+      <svg class="spinning-mandala" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(245, 158, 11, 0.25)" stroke-width="1.2" stroke-dasharray="3, 3" />
+        <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(234, 88, 12, 0.35)" stroke-width="1.5" />
+        <path d="M50 5 L55 35 L85 50 L55 65 L50 95 L45 65 L15 50 L45 35 Z" fill="rgba(254, 243, 199, 0.3)" stroke="#d97706" stroke-width="0.8" />
+      </svg>
+      <svg class="spinning-mandala-reverse" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="38" fill="none" stroke="rgba(217, 119, 6, 0.4)" stroke-width="1.2" stroke-dasharray="5, 3" />
+        <polygon points="50,15 80,75 20,75" fill="none" stroke="#ea580c" stroke-width="1" />
+        <polygon points="50,85 80,25 20,25" fill="none" stroke="#d97706" stroke-width="1" />
+      </svg>
+      <div class="om-center">ॐ</div>
+    </div>
+
+    <!-- Main Title & Copy -->
+    <h1 class="hero-title">
+      सनातन ग्रंथालय <br>
+      <span class="title-highlight">150+ संपूर्ण हिन्दू धर्म ग्रंथ संग्रह</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      वेद, 18 पुराण, 108 उपनिषद, श्रीमद्भगवद्गीता, रामायण, महाभारत और दुर्लभ संहिताएं — अब आपके मोबाइल और कंप्यूटर में हमेशा के लिए सुरक्षित।
+    </p>
+
+    <!-- Uploaded High-Res Sanatan Granthalaya Banner (With 3D Glow Card Frame) -->
+    <div class="banner-hero-card">
+      <div class="banner-badge-float">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <span>आधिकारिक संपूर्ण बंडल</span>
+      </div>
+      <img 
+        src="https://pankaj-connect-grow.lovable.app/__l5e/assets-v1/1210b549-f755-43d3-9887-02e48a10e280/sanatan-granthalaya-banner.jpg" 
+        alt="सनातन ग्रंथालय - वेद, पुराण, और धार्मिक ई-बुक्स डिजिटल हब" 
+        class="banner-img"
+        loading="eager"
+      />
+    </div>
+
+    <!-- Live Motion Graphics Video Loop -->
+    <div class="video-motion-card">
+      <div class="video-container">
+        <video class="motion-video-player" autoplay loop muted playsinline preload="auto">
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-golden-particles-rising-in-the-dark-41718-large.mp4" type="video/mp4">
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-bright-light-particles-flowing-in-space-41716-large.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay-gradient"></div>
+        <div class="video-floating-content">
+          <div class="video-info-box">
+            <h3>दिव्य ज्ञान का महासागर</h3>
+            <p>Easy Downloads • Lifetime Access • Read Anytime, Anywhere</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Urgency Countdown Card -->
+    <div class="timer-card">
+      <div class="timer-label">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b45309" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        यह विशेष ऑफर समाप्त होने में शेष:
+      </div>
+      <div class="timer-digits">
+        <div class="timer-box" id="t-hours">03<small>घंटे</small></div>
+        <div class="timer-box" id="t-mins">24<small>मिनट</small></div>
+        <div class="timer-box" id="t-secs">48<small>सेकंड</small></div>
+      </div>
+    </div>
+
+    <!-- 3D High-Conversion Action Button (With Pixel Checkout Tracking) -->
+    <a 
+      href="https://superprofile.bio/vp/150-%E0%A4%B8%E0%A5%87-%E0%A4%AD%E0%A5%80-%E0%A4%9C%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A6%E0%A4%BE-%E0%A4%B9%E0%A4%BF%E0%A4%82%E0%A4%A6%E0%A5%82-%E0%A4%A7%E0%A4%B0%E0%A5%8D%E0%A4%AE-%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%82%E0%A4%A5%E0%A5%8B%E0%A4%82-%E0%A4%95%E0%A4%BE-%E0%A4%B8%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B9---%E0%A4%86%E0%A4%9C-%E0%A4%B9%E0%A5%80-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AA%E0%A5%8D%E0%A4%A4-%E0%A4%95%E0%A4%B0%E0%A5%87-%E0%A4%82?checkout=true" 
+      class="cta-button-3d"
+      onclick="trackCheckout()"
+    >
+      <div class="cta-shimmer"></div>
+      <span>⚡ अभी तुरंत डाउनलोड करें</span>
+      <span class="price-tag">मात्र ₹199 <strike style="font-size:0.8rem; color:#888;">₹1999</strike></span>
+    </a>
+
+    <!-- Animated Feature Benefit Cards -->
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon-bubble">📜</div>
+        <h4>100% शुद्ध हिंदी अनुवाद</h4>
+        <p>संस्कृत के मूल श्लोकों के साथ सरल और सुगम हिंदी अनुवाद ताकि हर कोई आसानी से समझ सके।</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-bubble">📱</div>
+        <h4>सभी डिवाइस पर समर्थित</h4>
+        <p>मोबाइल, टैबलेट, लैपटॉप या आईपैड पर ऑफलाइन कभी भी पढ़ें। कोई इंटरनेट की आवश्यकता नहीं।</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-bubble">⚡</div>
+        <h4>तत्काल डाउनलोड लिंक</h4>
+        <p>भुगतान करते ही तुरंत आपके व्हाट्सएप और ईमेल पर गूगल ड्राइव डाउनलोड लिंक प्राप्त होगा।</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-bubble">🔒</div>
+        <h4>आजीवन सुरक्षित एक्सेस</h4>
+        <p>एक बार डाउनलोड करें और जीवन भर अपने परिवार और अगली पीढ़ियों के मार्गदर्शन हेतु सहेज कर रखें।</p>
+      </div>
+    </div>
+
+    <!-- Complete Granth Inclusion List -->
+    <div class="granth-list-card">
+      <h3>इस महासंग्रह में क्या-क्या शामिल है?</h3>
+      <div class="granth-chips">
+        <div class="granth-chip">✨ ऋग्वेद, यजुर्वेद, सामवेद, अथर्ववेद</div>
+        <div class="granth-chip">✨ 18 महापुराण (शिव, विष्णु, गरुड़ आदि)</div>
+        <div class="granth-chip">✨ 108 प्रमाणिक उपनिषद</div>
+        <div class="granth-chip">✨ श्रीमद्भगवद्गीता (सटीक व्याख्या)</div>
+        <div class="granth-chip">✨ वाल्मीकि रामायण व रामचरितमानस</div>
+        <div class="granth-chip">✨ संपूर्ण महाभारत (हिंदी)</div>
+        <div class="granth-chip">✨ चाणक्य नीति एवं विदुर नीति</div>
+        <div class="granth-chip">✨ योग वशिष्ठ एवं योग सूत्र</div>
+        <div class="granth-chip">✨ आयुर्वेद एवं वैदिक रहस्य संहिताएं</div>
+      </div>
+    </div>
+
+    <!-- Final Large CTA -->
+    <a 
+      href="https://superprofile.bio/vp/150-%E0%A4%B8%E0%A5%87-%E0%A4%AD%E0%A5%80-%E0%A4%9C%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A6%E0%A4%BE-%E0%A4%B9%E0%A4%BF%E0%A4%82%E0%A4%A6%E0%A5%82-%E0%A4%A7%E0%A4%B0%E0%A5%8D%E0%A4%AE-%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%82%E0%A4%A5%E0%A5%8B%E0%A4%82-%E0%A4%95%E0%A4%BE-%E0%A4%B8%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B9---%E0%A4%86%E0%A4%9C-%E0%A4%B9%E0%A5%80-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AA%E0%A5%8D%E0%A4%A4-%E0%A4%95%E0%A4%B0%E0%A5%87-%E0%A4%82?checkout=true" 
+      class="cta-button-3d"
+      onclick="trackCheckout()"
+    >
+      <div class="cta-shimmer"></div>
+      <span>📲 संपूर्ण ग्रंथ संग्रह अभी प्राप्त करें</span>
+      <span class="price-tag">₹199</span>
+    </a>
+
+  </div>
+
+  <!-- Mobile Sticky Footer Bar -->
+  <div class="sticky-bar">
+    <div class="sticky-pricing">
+      <span class="sticky-strike">MRP ₹1999</span>
+      <span class="sticky-now">₹199 <span style="font-size:0.7rem; color:#16a34a; font-weight:700;">(90% छूट)</span></span>
+    </div>
+    <a 
+      href="https://superprofile.bio/vp/150-%E0%A4%B8%E0%A5%87-%E0%A4%AD%E0%A5%80-%E0%A4%9C%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A6%E0%A4%BE-%E0%A4%B9%E0%A4%BF%E0%A4%82%E0%A4%A6%E0%A5%82-%E0%A4%A7%E0%A4%B0%E0%A5%8D%E0%A4%AE-%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%82%E0%A4%A5%E0%A5%8B%E0%A4%82-%E0%A4%95%E0%A4%BE-%E0%A4%B8%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B9---%E0%A4%86%E0%A4%9C-%E0%A4%B9%E0%A5%80-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AA%E0%A5%8D%E0%A4%A4-%E0%A4%95%E0%A4%B0%E0%A5%87-%E0%A4%82?checkout=true" 
+      class="sticky-btn"
+      onclick="trackCheckout()"
+    >
+      <span>अभी डाउनलोड करें</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+    </a>
+  </div>
+
+  <!-- Meta Pixel Checkout Tracker, Particle Canvas & Real-time Timer -->
+  <script>
+    // Facebook Pixel InitiateCheckout Event Trigger
+    function trackCheckout() {
+      if (typeof fbq === 'function') {
+        fbq('track', 'InitiateCheckout', {
+          content_name: 'Sanatan Granthalaya 150+ Granth Bundle',
+          value: 199.00,
+          currency: 'INR'
+        });
+      }
+    }
+
+    // 60FPS Ambient Divine Particle Canvas
+    (function initParticles() {
+      const canvas = document.getElementById('particle-canvas');
+      const ctx = canvas.getContext('2d');
+      let width = canvas.width = window.innerWidth;
+      let height = canvas.height = window.innerHeight;
+
+      window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      });
+
+      const particles = [];
+      const count = 35;
+
+      for (let i = 0; i < count; i++) {
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          radius: Math.random() * 2.8 + 1,
+          speedY: Math.random() * 0.6 + 0.2,
+          speedX: (Math.random() - 0.5) * 0.4,
+          opacity: Math.random() * 0.5 + 0.2,
+          pulse: Math.random() * 0.05
+        });
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, width, height);
+
+        particles.forEach(p => {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(245, 158, 11, ${p.opacity})`;
+          ctx.shadowBlur = 10;
+          ctx.shadowColor = 'rgba(234, 88, 12, 0.4)';
+          ctx.fill();
+
+          p.y -= p.speedY;
+          p.x += p.speedX;
+          p.opacity += Math.sin(Date.now() * 0.002) * 0.01;
+
+          if (p.y < -10) {
+            p.y = height + 10;
+            p.x = Math.random() * width;
+          }
+        });
+
+        requestAnimationFrame(draw);
+      }
+
+      draw();
+    })();
+
+    // Real-time Countdown Timer
+    (function startCountdown() {
+      const hEl = document.getElementById('t-hours');
+      const mEl = document.getElementById('t-mins');
+      const sEl = document.getElementById('t-secs');
+
+      let totalSeconds = 3 * 3600 + 24 * 60 + 48;
+
+      setInterval(() => {
+        if (totalSeconds > 0) totalSeconds--;
+        const h = Math.floor(totalSeconds / 3600);
+        const m = Math.floor((totalSeconds % 3600) / 60);
+        const s = totalSeconds % 60;
+
+        hEl.innerHTML = `${String(h).padStart(2, '0')}<small>घंटे</small>`;
+        mEl.innerHTML = `${String(m).padStart(2, '0')}<small>मिनट</small>`;
+        sEl.innerHTML = `${String(s).padStart(2, '0')}<small>सेकंड</small>`;
+      }, 1000);
+    })();
+  </script>
+
+</body>
+</html>
